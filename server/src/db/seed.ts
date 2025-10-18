@@ -11,8 +11,11 @@ await seed(db, schema).refine(f => {
       columns: {
         name: f.companyName(),
         description: f.string({isUnique:true})
+      },
+      with:{
+        questions: 5,
       }
-    }
+    },
   }
 }
 )

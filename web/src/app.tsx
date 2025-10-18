@@ -16,7 +16,6 @@ export function App() {
         </Routes>
       </BrowserRouter>
     </QueryClientProvider>
-
   )
 
 }
